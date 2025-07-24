@@ -2,70 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Clean Yard Service</title>
+  <title>Shitzu Crew – Dog Poop Cleanup</title>
   <style>
     body {
       font-family: sans-serif;
-      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
+      background: #f4f4f4;
+      color: #333;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
+    header {
+      background: #2f855a;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header p {
+      font-size: 1.1em;
+      margin-top: 8px;
+      font-style: italic;
+    }
+
+    .section {
       padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
-    h1 {
+    .section h2 {
       text-align: center;
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-
-    p.subtitle {
-      text-align: center;
-      font-size: 1.2em;
-      color: #555;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+      color: #2d3748;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
     }
 
     .card {
-      background-color: #fff;
-      padding: 25px;
-      border-radius: 8px;
+      background: white;
       border: 1px solid #ddd;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      border-radius: 8px;
+      padding: 20px;
       text-align: center;
-      transition: transform 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-3px);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
 
     .card h3 {
       margin-top: 0;
-      font-size: 1.3em;
     }
 
-    .card p {
+    .price {
+      font-size: 1.2em;
       margin: 10px 0;
-      font-size: 1em;
-      color: #444;
+      font-weight: bold;
     }
 
     .btn {
       display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: #28a745;
+      margin-top: 10px;
+      padding: 10px 18px;
+      background: #2f855a;
       color: white;
       text-decoration: none;
       border-radius: 4px;
@@ -73,111 +80,116 @@
     }
 
     .btn:hover {
-      background: #218838;
+      background: #276749;
     }
 
     .footer {
       text-align: center;
-      margin-top: 60px;
+      padding: 30px 20px;
+      color: #666;
       font-size: 0.9em;
-      color: #777;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2em;
+    @media (max-width: 500px) {
+      .price {
+        font-size: 1em;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
+  <header>
     <h1>Shitzu Crew</h1>
-    <p class="subtitle">"It's a dirty job. We shitzu not."</p>
-    <p class="subtitle">Simple dog poop cleanup services with flexible subscription options. No contracts. Cancel anytime.</p>
+    <p>It's a dirty job. We shitzu not.</p>
+  </header>
 
+  <div class="section">
+    <h2>🧹 One-Time Cleanup</h2>
     <div class="grid">
-
-      <!-- One-Time Cleanup -->
       <div class="card">
-        <h3>🧹 One-Time Cleanup</h3>
-        <p>Great for spring cleaning or pre-party prep.</p>
-        <p><strong>$X flat fee</strong></p>
-        <a class="btn" href="https://your-stripe-link-onetime">Book Now</a>
+        <h3>1 Dog</h3>
+        <p class="price">$XX flat fee</p>
+        <a class="btn" href="https://your-stripe-link-onetime-1dog">Book Now</a>
       </div>
-
-      <!-- Weekly Plans -->
       <div class="card">
-        <h3>🐶 1 Dog – Weekly</h3>
-        <p>Weekly service billed every 7 days.</p>
-        <p><strong>$X/week</strong></p>
+        <h3>2 Dogs</h3>
+        <p class="price">$XX flat fee</p>
+        <a class="btn" href="https://your-stripe-link-onetime-2dog">Book Now</a>
+      </div>
+      <div class="card">
+        <h3>3+ Dogs</h3>
+        <p class="price">$XX flat fee</p>
+        <a class="btn" href="https://your-stripe-link-onetime-3dog">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📅 Weekly Subscription</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>1 Dog</h3>
+        <p class="price">$XX / week</p>
         <a class="btn" href="https://your-stripe-link-weekly-1dog">Subscribe</a>
       </div>
-
       <div class="card">
-        <h3>🐶🐶 2 Dogs – Weekly</h3>
-        <p>Weekly service for two dogs.</p>
-        <p><strong>$X/week</strong></p>
+        <h3>2 Dogs</h3>
+        <p class="price">$XX / week</p>
         <a class="btn" href="https://your-stripe-link-weekly-2dog">Subscribe</a>
       </div>
-
       <div class="card">
-        <h3>🐶🐶🐶 3+ Dogs – Weekly</h3>
-        <p>More pets, more mess. We’ve got it covered.</p>
-        <p><strong>$X/week</strong></p>
+        <h3>3+ Dogs</h3>
+        <p class="price">$XX / week</p>
         <a class="btn" href="https://your-stripe-link-weekly-3dog">Subscribe</a>
       </div>
+    </div>
+  </div>
 
-      <!-- Biweekly Plans -->
+  <div class="section">
+    <h2>📆 Bi-Weekly Subscription</h2>
+    <div class="grid">
       <div class="card">
-        <h3>🐶 1 Dog – Biweekly</h3>
-        <p>Service every other week.</p>
-        <p><strong>$X/2 weeks</strong></p>
+        <h3>1 Dog</h3>
+        <p class="price">$XX / 2 weeks</p>
         <a class="btn" href="https://your-stripe-link-biweekly-1dog">Subscribe</a>
       </div>
-
       <div class="card">
-        <h3>🐶🐶 2 Dogs – Biweekly</h3>
-        <p>Twice monthly visits for two dogs.</p>
-        <p><strong>$X/2 weeks</strong></p>
+        <h3>2 Dogs</h3>
+        <p class="price">$XX / 2 weeks</p>
         <a class="btn" href="https://your-stripe-link-biweekly-2dog">Subscribe</a>
       </div>
-
       <div class="card">
-        <h3>🐶🐶🐶 3+ Dogs – Biweekly</h3>
-        <p>Heavy duty cleanups every other week.</p>
-        <p><strong>$X/2 weeks</strong></p>
+        <h3>3+ Dogs</h3>
+        <p class="price">$XX / 2 weeks</p>
         <a class="btn" href="https://your-stripe-link-biweekly-3dog">Subscribe</a>
       </div>
+    </div>
+  </div>
 
-      <!-- Monthly Plans -->
+  <div class="section">
+    <h2>🗓️ Monthly Subscription</h2>
+    <div class="grid">
       <div class="card">
-        <h3>🐶 1 Dog – Monthly</h3>
-        <p>Light monthly maintenance for a single pup.</p>
-        <p><strong>$X/month</strong></p>
+        <h3>1 Dog</h3>
+        <p class="price">$XX / month</p>
         <a class="btn" href="https://your-stripe-link-monthly-1dog">Subscribe</a>
       </div>
-
       <div class="card">
-        <h3>🐶🐶 2 Dogs – Monthly</h3>
-        <p>Monthly service for medium mess.</p>
-        <p><strong>$X/month</strong></p>
+        <h3>2 Dogs</h3>
+        <p class="price">$XX / month</p>
         <a class="btn" href="https://your-stripe-link-monthly-2dog">Subscribe</a>
       </div>
-
       <div class="card">
-        <h3>🐶🐶🐶 3+ Dogs – Monthly</h3>
-        <p>Budget-friendly option for big cleanups.</p>
-        <p><strong>$X/month</strong></p>
+        <h3>3+ Dogs</h3>
+        <p class="price">$XX / month</p>
         <a class="btn" href="https://your-stripe-link-monthly-3dog">Subscribe</a>
       </div>
-
     </div>
+  </div>
 
-    <div class="footer">
-      Questions? Email us at clean@yourdomain.com
-    </div>
+  <div class="footer">
+    Got questions? <br>Email us at <a href="mailto:shitzucrew@proton.me">shitzucrew@proton.me</a>
   </div>
 
 </body>
