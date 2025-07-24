@@ -5,23 +5,28 @@
   <title>Shitzu Crew – Dog Poop Cleanup</title>
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      background: #e6f2f0;
+      color: #1f2d2d;
     }
 
     header {
-      background: #2f855a;
+      background: #007c7c; /* teal */
       color: white;
-      padding: 30px 20px;
+      padding: 40px 20px 20px;
       text-align: center;
+    }
+
+    header img {
+      max-width: 120px;
+      margin-bottom: 10px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 2em;
+      font-size: 2.2em;
     }
 
     header p {
@@ -39,8 +44,8 @@
     .section h2 {
       text-align: center;
       margin-bottom: 20px;
-      font-size: 1.5em;
-      color: #2d3748;
+      font-size: 1.6em;
+      color: #004c4c;
     }
 
     .grid {
@@ -51,42 +56,60 @@
 
     .card {
       background: white;
-      border: 1px solid #ddd;
-      border-radius: 8px;
+      border: 1px solid #b2d8d8;
+      border-radius: 10px;
       padding: 20px;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.04);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
     }
 
     .card h3 {
       margin-top: 0;
+      font-size: 1.2em;
+      color: #004c4c;
     }
 
     .price {
       font-size: 1.2em;
       margin: 10px 0;
+      color: #2e5959;
     }
 
     .btn {
       display: inline-block;
       margin-top: 10px;
       padding: 10px 18px;
-      background: #2f855a;
+      background: #007c7c;
       color: white;
       text-decoration: none;
-      border-radius: 4px;
+      border-radius: 6px;
       font-weight: bold;
     }
 
     .btn:hover {
-      background: #276749;
+      background: #006666;
     }
 
     .footer {
       text-align: center;
       padding: 30px 20px;
-      color: #666;
+      color: #555;
       font-size: 0.9em;
+    }
+
+    .footer a {
+      color: #007c7c;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
     }
 
     @media (max-width: 500px) {
@@ -99,6 +122,7 @@
 <body>
 
   <header>
+    <img src="logo.png" alt="Shitzu Crew Logo">
     <h1>Shitzu Crew</h1>
     <p>It's a dirty job. We shitzu not.</p>
   </header>
